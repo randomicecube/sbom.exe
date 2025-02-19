@@ -28,7 +28,7 @@ jobs:
         run: mvn clean install -DskipTests
 
       - name: Dirty Waters Analysis
-        uses: chains-project/dirty-waters-action@ea2a1333be991704671dc3010cf2f66fd4f5b035
+        uses: chains-project/dirty-waters-action@9e8ad8f78240019718be9151202af3037ff861d0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           package_manager: maven
