@@ -3,6 +3,8 @@ name: code-quality
 on:
   pull_request:
   push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       ignore_cache:
@@ -34,3 +36,4 @@ jobs:
           package_manager: maven
           debug: true
           gradual_report: false
+          ignore_cache: true
